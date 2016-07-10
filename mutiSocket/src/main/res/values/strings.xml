@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ReadersDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">ReadersDemo</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="title_activity_reader_set_aty">ReaderSetAty</string>
+    <string name="title_activity_online_reader">OnlineReaderActivity</string>
+
+</resources>

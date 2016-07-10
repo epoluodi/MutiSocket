@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Volumes/文件/Android/MutiSocket/mutiSocket/libs/9200LibraryDecodeOutV.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="68d59b0be438ec7dd845cb9a067a6ace457c46ec">
+        <dex dex="/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/pre-dexed/debug/9200LibraryDecodeOutV_d55e2cd8839ca7a9ed19ebd40516cb3173a3015c.jar" />
+    </item>
+    <item
+        jar="/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3a6ceb1879f7e0b9423c5937368ce8dd8ec873e7">
+        <dex dex="/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/pre-dexed/debug/instant-run-bootstrap_0fd958985cd11be1ff041edd547bc0f32a0c4c08.jar" />
+    </item>
+    <item
+        jar="/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="63be79b9f7d267a651e2b3942b6e3a83b590c2d6">
+        <dex dex="/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/pre-dexed/debug/instant-run_cb07aea648d6b7c33d62bf370da2c70df458e00b.jar" />
+    </item>
+    <item
+        jar="/Users/cjw/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/pre-dexed/debug/support-v4-19.1.0_a816606cd9dc3aeaf7ef908d59fd888bcea522b3.jar" />
+    </item>
+
+</items>

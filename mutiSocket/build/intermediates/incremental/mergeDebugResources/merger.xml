@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main$Generated" generated="true"><source path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res"/><source path="/Volumes/文件/Android/MutiSocket/mutiSocket/build/generated/res/rs/debug"/><source path="/Volumes/文件/Android/MutiSocket/mutiSocket/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/debug/res"/></dataSet><dataSet config="main" generated-set="main$Generated"><source path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res"><file name="progress_round" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/anim/progress_round.xml" qualifiers="" type="anim"/><file name="push_bottom_in" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/anim/push_bottom_in.xml" qualifiers="" type="anim"/><file name="push_bottom_in2" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/anim/push_bottom_in2.xml" qualifiers="" type="anim"/><file name="push_buttom_out" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/anim/push_buttom_out.xml" qualifiers="" type="anim"/><file name="remain_original_location" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/anim/remain_original_location.xml" qualifiers="" type="anim"/><file name="slide_in_from_right" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/anim/slide_in_from_right.xml" qualifiers="" type="anim"/><file name="slide_out_to_right" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/anim/slide_out_to_right.xml" qualifiers="" type="anim"/><file name="activitybg" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/activitybg.png" qualifiers="" type="drawable"/><file name="back2" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/back2.png" qualifiers="" type="drawable"/><file name="dialog_bg" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/dialog_bg.png" qualifiers="" type="drawable"/><file name="logo" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/logo.png" qualifiers="" type="drawable"/><file name="radius_bg" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/radius_bg.xml" qualifiers="" type="drawable"/><file name="radius_button_bg" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/radius_button_bg.xml" qualifiers="" type="drawable"/><file name="radius_edit_bg" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/radius_edit_bg.xml" qualifiers="" type="drawable"/><file name="share" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/share.png" qualifiers="" type="drawable"/><file name="t1" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/t1.png" qualifiers="" type="drawable"/><file name="t2" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/t2.png" qualifiers="" type="drawable"/><file name="top" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/top.png" qualifiers="" type="drawable"/><file name="huz_popup_full_gray" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable-hdpi/huz_popup_full_gray.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable-xhdpi/ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable-xxhdpi/ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="activity_add" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/activity_add.xml" qualifiers="" type="layout"/><file name="activity_login" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/activity_login.xml" qualifiers="" type="layout"/><file name="activity_main" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="activity_online_reader" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/activity_online_reader.xml" qualifiers="" type="layout"/><file name="activity_reader_set_aty" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/activity_reader_set_aty.xml" qualifiers="" type="layout"/><file name="listview_item" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/listview_item.xml" qualifiers="" type="layout"/><file name="listview_item_two" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/listview_item_two.xml" qualifiers="" type="layout"/><file name="top_menu" path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/top_menu.xml" qualifiers="" type="layout"/><file path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/values/colors.xml" qualifiers=""><color name="nowpublic">#E62138</color><color name="black_overlay">#66000000</color><color name="house">#B04B87</color><color name="traffic">#F08519</color><color name="building">#897870</color><color name="black">#000000</color><color name="green">#FF00FF00</color><color name="blue">#FF0000FF</color><color name="business">#5E5872</color><color name="camera2">#297AED</color><color name="police">#009B4C</color><color name="chat">#B04B87</color><color name="clean">#DED572</color><color name="lightbulb">#566892</color><color name="shoppingcart">#2F318B</color><color name="student">#12623E</color><color name="gray">#afafaf</color><color name="transparent">#0000</color><color name="idcard">#297AED</color><color name="white">#FFFFFF</color></file><file path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/values/strings.xml" qualifiers=""><string name="hello_world">Hello world!</string><string name="title_activity_reader_set_aty">ReaderSetAty</string><string name="title_activity_add">AddActivity</string><string name="title_activity_online_reader">OnlineReaderActivity</string><string name="app_name">ReadersDemo</string><string name="title_activity_main">ReadersDemo</string></file><file path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/values/styles.xml" qualifiers=""><style name="myDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 除去title -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- <item name="android:windowBackground">@null</item>除去背景色 -->
+    </style><style name="CustomProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style><style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style><style name="TextView.Small.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style><style name="dimdialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style><style name="DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.DialogWindowTitle</item>
+    </style><style name="TextView.Middle.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style><style name="activityBG">
+        <item name="android:windowBackground">@drawable/activitybg</item>
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style><style name="activityBG3"> 
+        <item name="android:windowFrame">@null</item> 
+        <item name="android:windowIsTranslucent">true</item> 
+        <item name="android:windowNoTitle">true</item>     
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style><style name="activityBG2">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@drawable/huz_popup_full_gray</item>
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style><style name="TextView.Small.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style><style name="TextView"/><style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_buttom_out</item>
+    </style><style name="My_Theme_Dialog_Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowTitleStyle">@style/DialogWindowTitle</item>
+    </style><style name="TextView.Small">
+        <item name="android:textSize">15dip</item>
+    </style><style name="Theme.Tabhost">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style><style name="TextView.Middle">
+        <item name="android:textSize">18dip</item>
+    </style><style name="Theme" parent="@android:style/Theme"/><style name="TextView.Middle.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style></file></source><source path="/Volumes/文件/Android/MutiSocket/mutiSocket/build/generated/res/rs/debug"/><source path="/Volumes/文件/Android/MutiSocket/mutiSocket/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="/Volumes/文件/Android/MutiSocket/mutiSocket/src/debug/res"/></dataSet><mergedItems/></merger>

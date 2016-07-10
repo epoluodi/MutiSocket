@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/drawable/logo.png",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/logo.png"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/drawable/t1.png",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/t1.png"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/drawable/share.png",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/share.png"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/drawable/top.png",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/top.png"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/drawable/radius_edit_bg.xml",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/radius_edit_bg.xml"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/drawable/radius_button_bg.xml",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/radius_button_bg.xml"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/drawable/back2.png",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/back2.png"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/drawable/t2.png",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/t2.png"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/drawable/activitybg.png",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/activitybg.png"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/drawable/radius_bg.xml",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/radius_bg.xml"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/drawable/dialog_bg.png",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/drawable/dialog_bg.png"
+    }
+]

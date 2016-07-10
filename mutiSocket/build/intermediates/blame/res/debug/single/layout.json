@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/layout/listview_item.xml",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/listview_item.xml"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/layout/listview_item_two.xml",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/listview_item_two.xml"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/layout/top_menu.xml",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/top_menu.xml"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/layout/activity_login.xml",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/activity_login.xml"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/layout/activity_online_reader.xml",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/activity_online_reader.xml"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/layout/activity_add.xml",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/activity_add.xml"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/layout/activity_reader_set_aty.xml",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/activity_reader_set_aty.xml"
+    },
+    {
+        "merged": "/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Volumes/文件/Android/MutiSocket/mutiSocket/src/main/res/layout/activity_main.xml"
+    }
+]

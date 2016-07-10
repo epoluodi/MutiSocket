@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/upwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/uname"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:text="1"
+        android:textColor="@color/black"
+        android:background="@drawable/radius_edit_bg"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/upwd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/black"
+        android:background="@drawable/radius_edit_bg"
+        android:text="test1"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/uname"
+        android:layout_alignBottom="@+id/uname"
+        android:layout_toLeftOf="@+id/uname"
+        android:textColor="@color/black"
+        android:text="登录账户:" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/upwd"
+        android:layout_alignBottom="@+id/upwd"
+        android:layout_alignLeft="@+id/textView1"
+        android:textColor="@color/black"
+        android:text="密       码:" />
+
+    <EditText
+        android:id="@+id/addressPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/upwd"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/upwd"
+        android:background="@drawable/radius_edit_bg"
+        android:ems="10"
+        android:text="8090"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addressPort"
+        android:layout_alignBottom="@+id/addressPort"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="端       口:"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/addressPort"
+        android:layout_below="@+id/addressPort"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/radius_button_bg"
+        android:text="登陆" />
+
+</RelativeLayout>
