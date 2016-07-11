@@ -28,12 +28,15 @@ public class HelpUtil {
 					tag += tmp[i];
 				}
 			}
-			return tag;
+			if (tag.substring(0,2).equals("e2"))
+				return tag;
+			else
+				return "";
 		} catch (Exception e) {
 			if (e != null) {
 				
 			}
-			return null;
+			return "";
 		}
 	}
 
