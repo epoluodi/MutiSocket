@@ -5,6 +5,10 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -46,6 +50,7 @@ public class MainActivity extends Activity implements OnClickListener, CallBack 
     Button addDev;
     Context mContext;
 
+    Timer timer;
     ListView tagsList;
     private ItemtwoAdapter tagsAdapter;
     private ArrayList<String> datasList = new ArrayList<String>();
@@ -73,6 +78,7 @@ public class MainActivity extends Activity implements OnClickListener, CallBack 
 
                     String uii = tmpmap.get("tagUii");
                     String tx = tmpmap.get("tx");
+                    new Service(uii,tx);
                     // System.out.println(uii);
                     index = checkIsExist(uii, tagList);
 
@@ -112,10 +118,33 @@ public class MainActivity extends Activity implements OnClickListener, CallBack 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getWindow().addFlags(0x80000000);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // �������ı���Ľ�����Զ������ļ���
+
+        timer=new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                List<Map<String,String>> mapList = new ArrayList<Map<String, String>>();
+                for (Map<String,String> map:Service.list) {
+                    Map<String,String> map2 =new HashMap<String, String>();
+                    map2.put("uii",map.get("uii"));
+                    map2.put("ant_num",map.get("ant_num"));
+                    mapList.add(map2);
+                }
+
+                for (Map<String,String> map:mapList) {
+                   new Service(map.get("uii"),map.get("ant_num"));
+                }
+                mapList.clear();
+                mapList=null;
+
+            }
+        },15000);
+
+
         getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE
                         | WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
@@ -249,6 +278,19 @@ public class MainActivity extends Activity implements OnClickListener, CallBack 
     public boolean onKeyUp(int keyCode, KeyEvent event) {
         if (keyCode ==4)
         {
+            if (Service.list.size()!=0)
+            {
+
+                AlertDialog.Builder builder=new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("提示").setMessage("正在上传数据不能返回！");
+                builder.setPositiveButton("确定", null);
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
+
+                return false;
+            }
+
+
             AlertDialog.Builder builder=new AlertDialog.Builder(MainActivity.this);
             builder.setTitle("提示").setMessage("返回到登录界面吗！");
             builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
@@ -256,6 +298,7 @@ public class MainActivity extends Activity implements OnClickListener, CallBack 
                 public void onClick(DialogInterface dialogInterface, int i) {
                     Socket devSocket = MainServer.map.get("192.168.31.200");
                     new ModelControl().MethodCalled(devSocket, 0, ModelType.STOPINV, null);
+                    timer.cancel();
                     finish();
                     return;
                 }

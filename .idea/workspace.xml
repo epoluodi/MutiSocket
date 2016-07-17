@@ -3,10 +3,22 @@
   <component name="AndroidLayouts">
     <shared>
       <config>
-        <target>android-15</target>
+        <devices>
+          <device id="Nexus 7" />
+          <device id="Nexus 4" />
+          <device id="Nexus 5" />
+          <device id="Nexus 7 2013" />
+        </devices>
+        <target>android-16</target>
       </config>
     </shared>
     <layouts>
+      <layout url="file://$PROJECT_DIR$/mutiSocket/src/main/res/layout/activity_main.xml">
+        <config>
+          <state>Landscape</state>
+          <theme>@android:style/Theme.DeviceDefault</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/mutiSocket/src/main/res/layout/activity_online_reader.xml">
         <config>
           <state>Landscape</state>
@@ -29,7 +41,42 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebe04323-eebd-4ce7-9b84-a8b1fda94d8c" name="Default" comment="" />
+    <list default="true" id="ebe04323-eebd-4ce7-9b84-a8b1fda94d8c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/AjaxHttpPlugin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/HttpClientClass.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/Service.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_mutiSocket_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_mutiSocket_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_mutiSocket_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_mutiSocket_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_mutiSocket_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_mutiSocket_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/classes/debug/com/mutisocket/MainActivity$1.class" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/classes/debug/com/mutisocket/MainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/classes/debug/com/mutisocket/MainActivity$2.class" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/classes/debug/com/mutisocket/MainActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/classes/debug/com/mutisocket/MainActivity.class" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/classes/debug/com/mutisocket/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/classes/debug/com/mutisocket/tools/HelpUtil.class" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/classes/debug/com/mutisocket/tools/HelpUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/incremental-verifier/debug/com/mutisocket/MainActivity$1.class" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/incremental-verifier/debug/com/mutisocket/MainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/incremental-verifier/debug/com/mutisocket/MainActivity$2.class" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/incremental-verifier/debug/com/mutisocket/MainActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/incremental-verifier/debug/com/mutisocket/MainActivity.class" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/incremental-verifier/debug/com/mutisocket/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/incremental-verifier/debug/com/mutisocket/tools/HelpUtil.class" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/incremental-verifier/debug/com/mutisocket/tools/HelpUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/pre-dexed/debug/main_1c9bbf8e75913f342e550fc4542170c34af3110f.jar" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/pre-dexed/debug/main_1c9bbf8e75913f342e550fc4542170c34af3110f.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mutisocket/MainActivity$1.class" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mutisocket/MainActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mutisocket/MainActivity$2.class" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mutisocket/MainActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mutisocket/MainActivity.class" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mutisocket/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mutisocket/tools/HelpUtil.class" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/mutisocket/tools/HelpUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/outputs/apk/mutiSocket-debug-unaligned.apk" afterPath="$PROJECT_DIR$/mutiSocket/build/outputs/apk/mutiSocket-debug-unaligned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/outputs/apk/mutiSocket-debug.apk" afterPath="$PROJECT_DIR$/mutiSocket/build/outputs/apk/mutiSocket-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/instant-run-support/debug/reload-changes.txt" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/instant-run-support/debug/reload-changes.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/mutiSocket/build/intermediates/restart-dex/debug/build-info.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/MainActivity.java" afterPath="$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/tools/App.java" afterPath="$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/tools/App.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mutiSocket/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/mutiSocket/src/main/res/layout/activity_main.xml" />
+    </list>
     <ignored path="MutiSocket.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,115 +102,23 @@
     <favorites_list name="MutiSocket" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/LoginActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78446907">
-              <caret line="214" column="41" selection-start-line="214" selection-start-column="41" selection-end-line="215" selection-end-column="8" />
+            <state vertical-scroll-proportion="4.8177495">
+              <caret line="176" column="43" selection-start-line="176" selection-start-column="43" selection-end-line="176" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1427#2480#0" expanded="true" />
-                <element signature="e#2479#2480#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainServer.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/mutiSocket/libs/9200LibraryDecodeOutV.jar!/com/comm/net/MainServer.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.75">
-              <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_online_reader.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/res/layout/activity_online_reader.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.706896">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemtwoAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/adt/ItemtwoAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelpUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/tools/HelpUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReaderSetAty.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/ReaderSetAty.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="208" column="44" selection-start-line="208" selection-start-column="44" selection-end-line="208" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ItemAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/adt/ItemAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OnlineReaderActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/OnlineReaderActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModelControl.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/mutiSocket/libs/9200LibraryDecodeOutV.jar!/com/comm/ModelControl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="228.64285">
-              <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -1808,7 +1763,13 @@
         <option value="$PROJECT_DIR$/mutiSocket/src/main/res/layout/activity_online_reader.xml" />
         <option value="$PROJECT_DIR$/mutiSocket/src/main/res/layout/activity_reader_set_aty.xml" />
         <option value="$PROJECT_DIR$/mutiSocket/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/tools/HelpUtil.java" />
+        <option value="$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/HttpClientClass.java" />
+        <option value="$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/AjaxHttpPlugin.java" />
+        <option value="$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/tools/App.java" />
+        <option value="$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/Service.java" />
         <option value="$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/MainActivity.java" />
+        <option value="$PROJECT_DIR$/mutiSocket/src/main/res/layout/activity_main.xml" />
       </list>
     </option>
   </component>
@@ -1844,18 +1805,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MutiSocket" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2134,46 +2083,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mutisocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="adt" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MutiSocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MutiSocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mutiSocket" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MutiSocket" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2182,6 +2109,11 @@
     <property name="android.project.structure.last.selected" value="mutiSocket" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="device.picker.selection" value="5318070901907c172c9" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mutisocket" />
+    </key>
   </component>
   <component name="RunManager" selected="Android Application.mutiSocket">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
@@ -2457,7 +2389,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1276" height="777" extended-state="6" />
+    <frame x="4" y="23" width="1276" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2466,7 +2398,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.68939394" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2480,12 +2411,13 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25405845" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25405845" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -2495,39 +2427,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1427#2480#0" expanded="true" />
-            <element signature="e#2479#2480#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/ReaderSetAty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/tools/HelpUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2618,14 +2522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/tools/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/res/layout/activity_add.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2638,17 +2534,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
@@ -2775,10 +2660,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/AddActivity.java">
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/java/net/Socket.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+        <state vertical-scroll-proportion="-5.1130433">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/mutiSocket/libs/9200LibraryDecodeOutV.jar!/com/ntzzDecode/MacCmd.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7893864">
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/tools/HelpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71144277">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -2791,19 +2690,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/java/net/Socket.class">
+    <entry file="jar://$PROJECT_DIR$/mutiSocket/libs/9200LibraryDecodeOutV.jar!/com/comm/net/MainServer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.1130433">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/mutiSocket/libs/9200LibraryDecodeOutV.jar!/com/ntzzDecode/MacCmd.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7893864">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-          <folding />
+        <state vertical-scroll-proportion="0.086235486">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -2812,76 +2702,132 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.706896">
+        <state vertical-scroll-proportion="0.4363002">
           <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/mutiSocket/libs/9200LibraryDecodeOutV.jar!/com/comm/net/MainServer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.75">
-          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/OnlineReaderActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="36" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/mutiSocket/libs/9200LibraryDecodeOutV.jar!/com/comm/ModelControl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="228.64285">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/ReaderSetAty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="208" column="44" selection-start-line="208" selection-start-column="44" selection-end-line="208" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/adt/ItemAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/adt/ItemtwoAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        <state vertical-scroll-proportion="-0.32488114">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/tools/HelpUtil.java">
+    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/ReaderSetAty.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.030110935">
+          <caret line="208" column="44" selection-start-line="208" selection-start-column="44" selection-end-line="208" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/AddActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.354992">
+          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/adt/ItemAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21077655">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/mutiSocket/libs/9200LibraryDecodeOutV.jar!/com/comm/ModelControl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4096186">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/OnlineReaderActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.96988904">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/HttpClientClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7828843">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0063391444">
+          <caret line="80" column="24" selection-start-line="80" selection-start-column="17" selection-end-line="80" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#527#548#0" expanded="false" />
+            <element signature="e#1827#1843#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/java/util/List.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19826087">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/java/util/Collection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19826087">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-19/android.jar!/java/lang/Iterable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19826087">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/tools/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22056384">
+          <caret line="7" column="88" selection-start-line="7" selection-start-column="88" selection-end-line="7" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/AjaxHttpPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4690967">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5322862">
+          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mutiSocket/src/main/java/com/mutisocket/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78446907">
-          <caret line="214" column="41" selection-start-line="214" selection-start-column="41" selection-end-line="215" selection-end-column="8" />
+        <state vertical-scroll-proportion="4.8177495">
+          <caret line="176" column="43" selection-start-line="176" selection-start-column="43" selection-end-line="176" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1427#2480#0" expanded="true" />
-            <element signature="e#2479#2480#0" expanded="true" />
           </folding>
         </state>
       </provider>
