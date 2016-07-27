@@ -24,21 +24,68 @@ public class Service {
 
 
     String url;
-    private String uii, ant_num;
+    private String uii, ant_num, dt;
     public static List<Map<String, String>> list = new ArrayList<Map<String, String>>();
+    List<String> lists=new ArrayList<String>();
     private String datajson;
 
+    public Boolean Iswhile=false;
 
-    public Service(String uii, String ant_num) {
+    public Service()
+    {
+        new Thread(runnable).start();
+    }
 
-        this.uii ="3000"+ uii.toUpperCase();
-        this.ant_num = ant_num;
+
+    public void setTaginfo(String _uii, String _ant_num)
+    {
+        this.uii = "3000" + _uii.toUpperCase();
+        this.ant_num = _ant_num;
+        dt = String.valueOf(new Date().getTime());
+        if (lists.contains(uii))
+            return;
+        else
+            lists.add(uii);
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("label_code", uii);
+        map.put("ant_num", ant_num);
+        map.put("dt", dt);
+        list.add(map);
+
+    }
+    public Service(String _uii, String _ant_num) {
+
+        this.uii = "3000" + _uii.toUpperCase();
+        this.ant_num = _ant_num;
+        dt = String.valueOf(new Date().getTime());
 
         try {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("label_code", uii);
-            jsonObject.put("time_stamp", String.valueOf(new Date().getTime()));
-            jsonObject.put("label_code", ant_num);
+            jsonObject.put("time_stamp", dt);
+            jsonObject.put("ant_num", ant_num);
+            JSONArray jsonArray = new JSONArray();
+            jsonArray.put(jsonObject);
+            datajson = jsonArray.toString();
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        new Thread(runnable).start();
+    }
+
+    public Service(String _uii, String _ant_num, String _dt) {
+
+        this.uii = _uii;
+        this.ant_num = _ant_num;
+        this.dt = _dt;
+
+        try {
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("label_code", uii);
+            jsonObject.put("time_stamp", dt);
+            jsonObject.put("ant_num", ant_num);
             JSONArray jsonArray = new JSONArray();
             jsonArray.put(jsonObject);
             datajson = jsonArray.toString();
@@ -54,12 +101,24 @@ public class Service {
     Runnable runnable = new Runnable() {
         @Override
         public void run() {
-            try {
-                url = getUrl("uhf/scanBoxByTags");
-                KQ_scanBoxByTags(datajson);
-
-            } catch (Exception e) {
-                e.printStackTrace();
+            while (Iswhile) {
+                try {
+                    url = getUrl("uhf/scanBoxByTags");
+                    for (Map<String,String> map:list)
+                    {
+                        JSONObject jsonObject = new JSONObject();
+                        jsonObject.put("label_code", map.get("label_code"));
+                        jsonObject.put("time_stamp", map.get("dt"));
+                        jsonObject.put("ant_num", map.get("ant_num"));
+                        JSONArray jsonArray = new JSONArray();
+                        jsonArray.put(jsonObject);
+                        datajson = jsonArray.toString();
+                        KQ_scanBoxByTags(datajson,map);
+                    }
+                    Thread.sleep(3000);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
     };
@@ -72,13 +131,12 @@ public class Service {
 
     /**
      * 提交数据
+     *
      * @param _json
      */
-    public void KQ_scanBoxByTags(String _json) {
+    public void KQ_scanBoxByTags(String _json,Map<String ,String> map) {
         HttpClientClass httpClientClass = null;
-        Map<String, String> map = new HashMap<String, String>();
-        map.put("label_code", uii);
-        map.put("ant_num", ant_num);
+
         try {
             AjaxHttpPlugin ajaxHttpPlugin = new AjaxHttpPlugin();
             httpClientClass = ajaxHttpPlugin.initHttp();
@@ -87,7 +145,6 @@ public class Service {
             httpClientClass.setEntity(httpClientClass.getPostBodyData());
             Boolean result = httpClientClass.sendRequest();
             if (!result) {
-                list.add(map);
                 return;
             }
             byte[] buffer = httpClientClass.getRespBodyData();
@@ -97,22 +154,22 @@ public class Service {
                 JSONObject jsonObject = new JSONObject(json);
                 int r = jsonObject.getInt("type");
                 if (r != 1) {
-                    list.add(map);
                     return;
-                }
-                else
+                } else {
                     list.remove(map);
+                    lists.remove(map.get("label_code"));
+                }
 
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
+            Log.i("队列 ",String.valueOf(list.size()));
             Log.i("返回数据", json);
 
 
         } catch (Exception e) {
             e.printStackTrace();
-            list.add(map);
         } finally {
             if (httpClientClass != null) {
                 httpClientClass.closeRequest();
@@ -121,8 +178,6 @@ public class Service {
         }
 
     }
-
-
 
 
 }

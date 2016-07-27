@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="bb521d688a331e04ed7d024183e490e707711155">
+        <dex dex="/Volumes/文件/Android/MutiSocket/mutiSocket/build/intermediates/pre-dexed/debug/instant-run-bootstrap_0fd958985cd11be1ff041edd547bc0f32a0c4c08.jar" />
+    </item>
+
+</items>

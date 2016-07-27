@@ -20,7 +20,7 @@
     <color name="traffic">#F08519</color>
     <color name="transparent">#0000</color>
     <color name="white">#FFFFFF</color>
-    <string name="app_name">ReadersDemo</string>
+    <string name="app_name">电子标签管理</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_add">AddActivity</string>
     <string name="title_activity_main">ReadersDemo</string>

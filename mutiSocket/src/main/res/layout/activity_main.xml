@@ -205,7 +205,7 @@
                         android:text="更新APP"
                         android:textColor="@color/black"
                         android:textSize="25dp"
-                        android:visibility="visible" />
+                        android:visibility="gone" />
                     <Button
                         android:layout_marginLeft="10dp"
                         android:id="@+id/addDev"

@@ -12,10 +12,15 @@ import java.util.TimerTask;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.DownloadManager;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.view.KeyEvent;
@@ -39,6 +44,9 @@ import com.ntzzDecode.MacCmd;
 import com.ntzzDecode.ModelType;
 
 public class MainActivity extends Activity implements OnClickListener, CallBack {
+    DownloadManager downloadManager;
+    DownloadCompleteReceiver downloadCompleteReceiver;
+
 
     SimpleDateFormat time = new SimpleDateFormat("yyyy:MM:dd HH:mm:ss");
     ImageView imgbtn;
@@ -49,7 +57,9 @@ public class MainActivity extends Activity implements OnClickListener, CallBack 
     TextView peptime;
     Button addDev;
     Context mContext;
+    Button update;
 
+    Service service;
     Timer timer;
     ListView tagsList;
     private ItemtwoAdapter tagsAdapter;
@@ -71,35 +81,27 @@ public class MainActivity extends Activity implements OnClickListener, CallBack 
                     } else {
                         i++;
                     }
+                    Bundle bundle=msg.getData();
 
-                    int index = -1;
-
-                    HashMap<String, String> tmpmap = map;
-
-                    String uii = tmpmap.get("tagUii");
-                    String tx = tmpmap.get("tx");
-                    new Service(uii,tx);
+                    String uii = bundle.getString("tag");
+                    String tx = bundle.getString("tx");
+                    service.setTaginfo(uii,tx);
                     // System.out.println(uii);
-                    index = checkIsExist(uii, tagList);
+//                    index = checkIsExist(uii, tagList);
 
                     if (uii == null) {
                     } else {
-                        if (index == -1) {
-                            tagList.add(tmpmap);
+//                        tagList.add(tmpmap);
+//                        datasList.clear();
+                        //lvTags.setAdapter(adapter);
+                        datasList.add(0, time.format(new Date(System.currentTimeMillis()))
+                                + "\n返回标签:" + uii + ";" + "天线:" + tx);
+                        tagsAdapter.notifyDataSetChanged();
+
+                        if (datasList.size()>6)
                             datasList.clear();
-                            //lvTags.setAdapter(adapter);
-                            datasList.add(0, time.format(new Date(System.currentTimeMillis()))
-                                    + "\n返回标签:" + uii + ";" + "天线:"+tx);
-                        } else {
-                            int tagcount = Integer.parseInt(
-                                    tagList.get(index).get("tagCount"), 10) + 1;
-                            tmpmap.put("tagCount", String.valueOf(tagcount));
-                            tagList.set(index, tmpmap);
-                            //adapter.notifyDataSetChanged();
-//						Toast.show(mContext, "收到标签号为：" + uii + "; 读取次数为:" + String.valueOf(tagcount), 1000);
-                        }
+
                     }
-                    sendMsg(1);
 
                     break;
                 case 1:
@@ -110,9 +112,8 @@ public class MainActivity extends Activity implements OnClickListener, CallBack 
         }
     };
 
-    private void sendMsg(int flag) {
-        Message msg = new Message();
-        msg.what = flag;
+    private void sendMsg(Message msg) {
+
         handler.sendMessage(msg);
     }
 
@@ -123,26 +124,30 @@ public class MainActivity extends Activity implements OnClickListener, CallBack 
         setContentView(R.layout.activity_main);
 
 
-        timer=new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                List<Map<String,String>> mapList = new ArrayList<Map<String, String>>();
-                for (Map<String,String> map:Service.list) {
-                    Map<String,String> map2 =new HashMap<String, String>();
-                    map2.put("uii",map.get("uii"));
-                    map2.put("ant_num",map.get("ant_num"));
-                    mapList.add(map2);
-                }
 
-                for (Map<String,String> map:mapList) {
-                   new Service(map.get("uii"),map.get("ant_num"));
-                }
-                mapList.clear();
-                mapList=null;
-
-            }
-        },15000);
+        service =new Service();
+        service.Iswhile=true;
+//        timer=new Timer();
+//        timer.schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                List<Map<String,String>> mapList = new ArrayList<Map<String, String>>();
+//                for (Map<String,String> map:Service.list) {
+//                    Map<String,String> map2 =new HashMap<String, String>();
+//                    map2.put("uii",map.get("uii"));
+//                    map2.put("ant_num",map.get("ant_num"));
+//                    map2.put("dt",map.get("dt"));
+//                    mapList.add(map2);
+//                }
+//
+//                for (Map<String,String> map:mapList) {
+//                   new Service(map.get("uii"),map.get("ant_num"),map.get("dt"));
+//                }
+//                mapList.clear();
+//                mapList=null;
+//
+//            }
+//        },15000);
 
 
         getWindow().setSoftInputMode(
@@ -152,14 +157,16 @@ public class MainActivity extends Activity implements OnClickListener, CallBack 
         mContext = MainActivity.this;
 
         imgbtn = (ImageView) findViewById(R.id.undo);
-        imgbtn.setOnTouchListener(new OnTouchListener() {
-
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                MainActivity.this.finish();
-                return false;
-            }
-        });
+//        imgbtn.setOnTouchListener(new OnTouchListener() {
+//
+//            @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//                MainActivity.this.finish();
+//                return false;
+//            }
+//        });
+        update = (Button)findViewById(R.id.update);
+        update.setOnClickListener(onClickListener);
         pichead = (ImageView) findViewById(R.id.imageView1);
         pepname = (TextView) findViewById(R.id.textView1);
         peptime = (TextView) findViewById(R.id.TextView01);
@@ -192,6 +199,27 @@ public class MainActivity extends Activity implements OnClickListener, CallBack 
 //		 Socket socket = new Socket("192.168.31.175", 40000);
 //		 MainServer.map.put("192.168.31.175", socket);
     }
+
+
+    //更新app
+    OnClickListener onClickListener=new OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            String updateurl = "http://services.kaiqiaole.com/UpdateApp/RFIDController.apk";
+            downloadCompleteReceiver = new DownloadCompleteReceiver();
+            DownloadServer downloadServer = new DownloadServer(getApplicationContext(), downloadCompleteReceiver);
+
+            registerReceiver(downloadCompleteReceiver, new IntentFilter(
+                    DownloadManager.ACTION_DOWNLOAD_COMPLETE));
+            downloadManager = downloadServer.initDownloadServer(updateurl);
+            if (downloadManager == null)
+            {
+                unregisterReceiver(downloadCompleteReceiver);
+
+                android.widget.Toast.makeText(MainActivity.this,"更新失败", android.widget.Toast.LENGTH_SHORT).show();
+            }
+        }
+    };
 
     @Override
     public void onClick(View v) {
@@ -240,15 +268,23 @@ public class MainActivity extends Activity implements OnClickListener, CallBack 
                 if (tag.equals(""))
                     return;
                 String tx = returnstr.substring(returnstr.length()-2,returnstr.length());
-                map = new HashMap<String, String>();
-                map.put("tagUii", tag);
-                map.put("tx", tx);
-                map.put("tagLen", String.valueOf(tag.length()));
-                map.put("tagCount", String.valueOf(1));
-                sendMsg(0);
+//                map = new HashMap<String, String>();
+//                map.put("tagUii", tag);
+//                map.put("tx", tx);
+//                map.put("tagLen", String.valueOf(tag.length()));
+//                map.put("tagCount", String.valueOf(1));
+
+                Message message=handler.obtainMessage();
+                message.what=0;
+                Bundle bundle=new Bundle();
+                bundle.putString("tag",tag);
+                bundle.putString("tx",tx);
+                message.setData(bundle);
+                message.obj = tag;
+                sendMsg(message);
                 break;
         }
-        sendMsg(1);
+
     }
 
     @Override
@@ -296,9 +332,12 @@ public class MainActivity extends Activity implements OnClickListener, CallBack 
             builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i) {
-                    Socket devSocket = MainServer.map.get("192.168.31.200");
+                    service.Iswhile=false;
+                    Service.list.clear();
+                    service.lists.clear();
+                    Socket devSocket = MainServer.map.get("192.168.199.10");
                     new ModelControl().MethodCalled(devSocket, 0, ModelType.STOPINV, null);
-                    timer.cancel();
+//                    timer.cancel();
                     finish();
                     return;
                 }
@@ -314,4 +353,98 @@ public class MainActivity extends Activity implements OnClickListener, CallBack 
         }
         return super.onKeyUp(keyCode, event);
     }
+
+
+    // 接受下载完成后的intent
+    public class DownloadCompleteReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+            //判断是否下载完成的广播
+            if (intent.getAction().equals(
+                    DownloadManager.ACTION_DOWNLOAD_COMPLETE)) {
+
+                //获取下载的文件id
+                long downId = intent.getLongExtra(
+                        DownloadManager.EXTRA_DOWNLOAD_ID, -1);
+
+                //自动安装apk
+                unregisterReceiver(downloadCompleteReceiver);
+
+                installAPK(downloadManager.getUriForDownloadedFile(downId));
+            }
+        }
+
+        /**
+         * 安装apk文件
+         */
+        private void installAPK(Uri apk) {
+
+            // 通过Intent安装APK文件
+            if (apk ==null)
+            {
+
+                android.widget.Toast.makeText(MainActivity.this,"下载更新失败，请重新尝试", android.widget.Toast.LENGTH_SHORT).show();
+                return;
+            }
+            Intent intents = new Intent();
+            intents.setAction("android.intent.action.VIEW");
+            intents.addCategory("android.intent.category.DEFAULT");
+            intents.setType("application/vnd.android.package-archive");
+            intents.setData(apk);
+            intents.setDataAndType(apk, "application/vnd.android.package-archive");
+            intents.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intents);
+            finish();
+
+
+        }
+
+    }
+
+
+    public class DownloadServer {
+        Context context;
+        DownloadManager downloadManager;
+        MainActivity.DownloadCompleteReceiver downloadCompleteReceiver;
+
+        /**
+         * 初始化下载器 *
+         */
+
+        public DownloadServer(Context context1, MainActivity.DownloadCompleteReceiver downloadCompleteReceiver1) {
+            downloadCompleteReceiver = downloadCompleteReceiver1;
+            context = context1;
+        }
+
+        public DownloadManager initDownloadServer(final String updateurl) {
+
+            try {
+                downloadManager = (DownloadManager) context.getSystemService(context.DOWNLOAD_SERVICE);
+
+                //设置下载地址
+                DownloadManager.Request down = new DownloadManager.Request(
+                        Uri.parse(updateurl));
+                down.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_MOBILE
+                        | DownloadManager.Request.NETWORK_WIFI);
+                down.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE);
+                down.setVisibleInDownloadsUi(true);
+                down.setDestinationInExternalFilesDir(context,
+                        Environment.DIRECTORY_DOWNLOADS, "RFIDController.apk");
+                downloadManager.enqueue(down);
+
+                return downloadManager;
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+
+        }
+
+
+    }
+
+
 }

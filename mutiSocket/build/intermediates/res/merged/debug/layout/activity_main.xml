@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
-    tools:context="${packageName}.${activityClass}" >
+    >
 
     <RelativeLayout
         android:id="@+id/layout_topmenu"
@@ -174,7 +174,8 @@
 
     <TableLayout
         android:id="@+id/addTable"
-        android:layout_width="130dp"
+
+        android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_alignRight="@+id/TableLayout01"
         android:layout_alignTop="@+id/textView2"
@@ -195,9 +196,18 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical" >
-
+                    android:orientation="horizontal" >
                     <Button
+                        android:id="@+id/update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/radius_button_bg"
+                        android:text="更新APP"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:visibility="gone" />
+                    <Button
+                        android:layout_marginLeft="10dp"
                         android:id="@+id/addDev"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
